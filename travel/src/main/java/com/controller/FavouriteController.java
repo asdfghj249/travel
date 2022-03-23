@@ -81,6 +81,7 @@ public class FavouriteController {
 
     @RequestMapping("/favouriteRank")
     public String favouriteRank(Model model,Page page){
+        //测试合并分支
         page.setCount(6);
         PageHelper.offsetPage(page.getStart(),page.getCount());
         List<Route> routes = favouriteService.FavRank();
