@@ -32,6 +32,7 @@ public class FavouriteController {
     @RequestMapping("/myfavourite")
     public String myfavourite(HttpSession session, Model model,Page page){
         //test注释
+        //测试zc分支
         page.setCount(12);
         PageHelper.offsetPage(page.getStart(),page.getCount());
 
@@ -82,7 +83,7 @@ public class FavouriteController {
 
     @RequestMapping("/favouriteRank")
     public String favouriteRank(Model model,Page page){
-        //测试合并分支2226
+        //测试合并分支222
         page.setCount(6);
         PageHelper.offsetPage(page.getStart(),page.getCount());
         List<Route> routes = favouriteService.FavRank();
