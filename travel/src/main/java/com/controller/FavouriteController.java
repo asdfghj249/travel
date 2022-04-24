@@ -31,6 +31,7 @@ public class FavouriteController {
 
     @RequestMapping("/myfavourite")
     public String myfavourite(HttpSession session, Model model,Page page){
+        //test注释
         page.setCount(12);
         PageHelper.offsetPage(page.getStart(),page.getCount());
 
