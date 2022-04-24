@@ -31,6 +31,7 @@ public class FavouriteController {
 
     @RequestMapping("/myfavourite")
     public String myfavourite(HttpSession session, Model model,Page page){
+        //测试zc分支
         page.setCount(12);
         PageHelper.offsetPage(page.getStart(),page.getCount());
 
